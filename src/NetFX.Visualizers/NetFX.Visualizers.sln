@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.2017
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VS2017", "VS2017", "{EB48F1EF-C050-4149-881B-C1D33D25613C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VS2019", "VS2019", "{B6C975CC-988C-4E86-A159-F4545ECF4B0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VS2022", "VS2022", "{651DF6F3-DE01-4134-ACA2-BF188ADAC569}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NETFX", "NETFX", "{AEE48F88-EBF4-4D41-A8F7-0F1F7420F22D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementation", "Implementation", "{63F405B5-63AA-41D2-A184-A65C157D8081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS2017.NETFX.DataVisualizer", "VS2017.NETFX.DataVisualizer\VS2017.NETFX.DataVisualizer.csproj", "{9396B2CB-0656-4DDB-AE35-AEA6694C3C79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleDemo", "SampleDemo", "{0DF38616-9849-4332-9B07-A7E38C1A2FCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS2017.NETFX.DataVisualizerWinformsDemo", "VS2017.NETFX.DataVisualizerWinformsDemo\VS2017.NETFX.DataVisualizerWinformsDemo.csproj", "{DCE619A7-28BF-475E-92FC-165D7E670A90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9396B2CB-0656-4DDB-AE35-AEA6694C3C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9396B2CB-0656-4DDB-AE35-AEA6694C3C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9396B2CB-0656-4DDB-AE35-AEA6694C3C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9396B2CB-0656-4DDB-AE35-AEA6694C3C79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCE619A7-28BF-475E-92FC-165D7E670A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCE619A7-28BF-475E-92FC-165D7E670A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCE619A7-28BF-475E-92FC-165D7E670A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCE619A7-28BF-475E-92FC-165D7E670A90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AEE48F88-EBF4-4D41-A8F7-0F1F7420F22D} = {EB48F1EF-C050-4149-881B-C1D33D25613C}
+		{63F405B5-63AA-41D2-A184-A65C157D8081} = {AEE48F88-EBF4-4D41-A8F7-0F1F7420F22D}
+		{9396B2CB-0656-4DDB-AE35-AEA6694C3C79} = {63F405B5-63AA-41D2-A184-A65C157D8081}
+		{0DF38616-9849-4332-9B07-A7E38C1A2FCE} = {AEE48F88-EBF4-4D41-A8F7-0F1F7420F22D}
+		{DCE619A7-28BF-475E-92FC-165D7E670A90} = {0DF38616-9849-4332-9B07-A7E38C1A2FCE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F36A2F90-9C05-4004-A541-4ED03AFDB21C}
+	EndGlobalSection
+EndGlobal
