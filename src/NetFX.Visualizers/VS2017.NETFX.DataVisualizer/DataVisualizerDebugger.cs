@@ -56,6 +56,9 @@ namespace VS2017.NETFX.DataVisualizer
                             }
                             notablenameCounter++;
                         }
+                        // Set selected index as 0 by default to select first dataset by default
+                        vS2017DataVisualizer.cmbDataTables.SelectedIndex = 0;
+
                     }
                     // if object to visualize is DataSet, the Label display for single datatable's TableName is not relevant to display anymore.
                     vS2017DataVisualizer.lblDataTableName.Text = "";
