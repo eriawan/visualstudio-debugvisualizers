@@ -69,7 +69,6 @@ namespace VS2019.NETFX.DataVisualizer
             this.lblDataSetName.Size = new System.Drawing.Size(104, 17);
             this.lblDataSetName.TabIndex = 0;
             this.lblDataSetName.Text = "DataSetName :";
-            this.lblDataSetName.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblTablesName
             // 
