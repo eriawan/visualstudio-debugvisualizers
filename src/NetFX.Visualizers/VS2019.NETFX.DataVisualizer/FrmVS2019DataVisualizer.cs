@@ -16,5 +16,21 @@ namespace VS2019.NETFX.DataVisualizer
         {
             InitializeComponent();
         }
+
+        internal IListSource GridViewSourceData { get; set; }
+
+        private void CmbDataTables_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(GridViewSourceData is DataSet)
+            {
+                DataSet gVDataSource = GridViewSourceData as DataSet;
+                if (gVDataSource.Tables.Count > 0 && CmbDataTables.Items.Count > 0)
+                {
+                    DgvDataVisualizer.DataSource = null;
+                    DgvDataVisualizer.DataSource = gVDataSource.Tables[CmbDataTables.SelectedIndex];
+                    Refresh();
+                }
+            }
+        }
     }
 }

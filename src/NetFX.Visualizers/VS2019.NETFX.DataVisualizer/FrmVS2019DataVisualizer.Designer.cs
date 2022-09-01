@@ -29,63 +29,37 @@ namespace VS2019.NETFX.DataVisualizer
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DgvDataVisualizer = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblDataSetName = new System.Windows.Forms.Label();
-            this.lblTablesName = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblDataTableName = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.CmbDataTables = new System.Windows.Forms.ComboBox();
+            this.lblTablesName = new System.Windows.Forms.Label();
+            this.lblDataSetName = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvDataVisualizer)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DgvDataVisualizer
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 99);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 330);
-            this.dataGridView1.TabIndex = 0;
+            this.DgvDataVisualizer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvDataVisualizer.Location = new System.Drawing.Point(12, 99);
+            this.DgvDataVisualizer.Name = "DgvDataVisualizer";
+            this.DgvDataVisualizer.ReadOnly = true;
+            this.DgvDataVisualizer.RowHeadersWidth = 51;
+            this.DgvDataVisualizer.RowTemplate.Height = 24;
+            this.DgvDataVisualizer.Size = new System.Drawing.Size(776, 330);
+            this.DgvDataVisualizer.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.lblDataTableName);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.CmbDataTables);
             this.panel1.Controls.Add(this.lblTablesName);
             this.panel1.Controls.Add(this.lblDataSetName);
             this.panel1.Location = new System.Drawing.Point(7, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(780, 40);
             this.panel1.TabIndex = 1;
-            // 
-            // lblDataSetName
-            // 
-            this.lblDataSetName.AutoSize = true;
-            this.lblDataSetName.Location = new System.Drawing.Point(16, 9);
-            this.lblDataSetName.Name = "lblDataSetName";
-            this.lblDataSetName.Size = new System.Drawing.Size(104, 17);
-            this.lblDataSetName.TabIndex = 0;
-            this.lblDataSetName.Text = "DataSetName :";
-            // 
-            // lblTablesName
-            // 
-            this.lblTablesName.AutoSize = true;
-            this.lblTablesName.Location = new System.Drawing.Point(127, 9);
-            this.lblTablesName.Name = "lblTablesName";
-            this.lblTablesName.Size = new System.Drawing.Size(55, 17);
-            this.lblTablesName.TabIndex = 1;
-            this.lblTablesName.Text = "Tables:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(188, 6);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(185, 24);
-            this.comboBox1.TabIndex = 2;
             // 
             // lblDataTableName
             // 
@@ -96,16 +70,43 @@ namespace VS2019.NETFX.DataVisualizer
             this.lblDataTableName.TabIndex = 3;
             this.lblDataTableName.Text = "DataTableName:";
             // 
+            // CmbDataTables
+            // 
+            this.CmbDataTables.FormattingEnabled = true;
+            this.CmbDataTables.Location = new System.Drawing.Point(188, 6);
+            this.CmbDataTables.Name = "CmbDataTables";
+            this.CmbDataTables.Size = new System.Drawing.Size(185, 24);
+            this.CmbDataTables.TabIndex = 2;
+            this.CmbDataTables.SelectedIndexChanged += new System.EventHandler(this.CmbDataTables_SelectedIndexChanged);
+            // 
+            // lblTablesName
+            // 
+            this.lblTablesName.AutoSize = true;
+            this.lblTablesName.Location = new System.Drawing.Point(127, 9);
+            this.lblTablesName.Name = "lblTablesName";
+            this.lblTablesName.Size = new System.Drawing.Size(55, 17);
+            this.lblTablesName.TabIndex = 1;
+            this.lblTablesName.Text = "Tables:";
+            // 
+            // lblDataSetName
+            // 
+            this.lblDataSetName.AutoSize = true;
+            this.lblDataSetName.Location = new System.Drawing.Point(16, 9);
+            this.lblDataSetName.Name = "lblDataSetName";
+            this.lblDataSetName.Size = new System.Drawing.Size(104, 17);
+            this.lblDataSetName.TabIndex = 0;
+            this.lblDataSetName.Text = "DataSetName :";
+            // 
             // FrmVS2019DataVisualizer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DgvDataVisualizer);
             this.Name = "FrmVS2019DataVisualizer";
             this.Text = "FrmVS2019DataVisualizer";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvDataVisualizer)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -114,11 +115,11 @@ namespace VS2019.NETFX.DataVisualizer
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DgvDataVisualizer;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblDataSetName;
-        private System.Windows.Forms.Label lblTablesName;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label lblDataTableName;
+        internal System.Windows.Forms.Label lblDataSetName;
+        internal System.Windows.Forms.ComboBox CmbDataTables;
+        internal System.Windows.Forms.Label lblDataTableName;
+        internal System.Windows.Forms.Label lblTablesName;
     }
 }
