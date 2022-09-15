@@ -35,8 +35,8 @@ namespace VS2019.NETFX.DataVisualizer
                     #endregion
 
                     DataSet dataSet = dataToVisualize as DataSet;
-                    
-                    if(String.IsNullOrWhiteSpace(dataSet.DataSetName))
+                    vS2019DataVisualizer.GridViewSourceData = dataSet;
+                    if (String.IsNullOrWhiteSpace(dataSet.DataSetName))
                     {
                         vS2019DataVisualizer.lblDataSetName.Text = "No Data Set Name";
                     }
@@ -60,8 +60,9 @@ namespace VS2019.NETFX.DataVisualizer
                                 noNameCounter++;
                             }
                         }
+                        // Set selected index as 0 by default to select first dataset by default
+                        vS2019DataVisualizer.CmbDataTables.SelectedIndex = 0;
                     }
-
                 }
                 else if (typeof(DataTable).IsInstanceOfType(dataToVisualize))
                 {
@@ -79,7 +80,6 @@ namespace VS2019.NETFX.DataVisualizer
             }
 
             vS2019DataVisualizer.ShowDialog();
-            throw new NotImplementedException();
         }
 
         public static void TestShowVisualizer(object objectToVisualize)
